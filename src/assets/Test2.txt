@@ -1,0 +1,43 @@
+# Javascript associative arrays
+          const arr = {fname:"Shibu", lastname: “Manoharan”};
+          arr["name"] = "Shibu1";
+          alert(arr["name"]);
+
+          # Javascript associative array 2
+          const arr = new Object();
+          arr["name"] = "Rejitha";
+          alert(arr["name"]);
+
+
+          # 1. Using Hashtable
+          import java.util.Hashtable;
+
+          Hashtable htable = new Hashtable();
+          htable.put( "firstname", "Shibu" );
+          htable.put( "lastname", "Manoharan" );
+
+          String yourname = (String) ht.get( "firstname" );
+
+          # 2. Hashmap
+          Map<String, String> map = new HashMap<String, String>();
+          map.put("firstname", "Shibu");
+          map.put("lastname", “Manoharan”);
+          map.get("firstname");
+
+          #3 Arrylist
+          public class Person{
+              public String name, lastname;
+
+              public Person(String firstname, String lastname){
+                  this.firatname = firstname;
+                  this.lastname = lastname;
+              }
+          }
+
+          List<Person> persons = new ArrayList<Person>();
+          persons.add(new Person("Shibu","Manoharan"));
+          persons.add(new Person ("Fname","Lname"));
+
+          persons.get(0).firstname;
+
+          Hashtable is synchronized where as HashMap is not. So hashmap is better for non threaded applications and it performs well. Hashtable doesn’t allow null keys or values. ArrayList stores the element’s value alone and internally maintains the indexes for each element. HashMap stores key & value pair. ArrayList maintains the insertion order while HashMap doesn’t. ArrayList allows duplicate elements but HashMap doesn’t allow duplicate keys. ArrayList can have any number of null elements. HashMap allows one null key and any number of null values.
